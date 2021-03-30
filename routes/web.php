@@ -15,16 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('papan', function () {
-    return view('papan');
-});
-
 Route::get('/', function () {
-    return view('new');
+    return view('yo');
 });
-
-
-
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
